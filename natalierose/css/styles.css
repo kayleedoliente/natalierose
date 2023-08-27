@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+  background-color: #fff3f3;
+  font-family: "Playfair Display", serif;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.logo-image {
+  width: 32px; /* Adjust the width as needed */
+  height: auto; /* This maintains the aspect ratio */
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__item {
+  margin-right: 20px;
+}
+
+.navbar__links {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #ff83b7;
+}
+
+/* Style the main section */
+.main {
+  background-image: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.main__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main__content h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.main__content p {
+  font-size: 20px;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+
+.main__btn {
+  background-color: #ff83b7;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main__btn:hover {
+  background-color: #ff428d;
+}
+
+.image-container {
+  width: 3000rem; /* Set the desired width */
+  height: 30rem; /* Set the desired height */
+  overflow: hidden; /* Hide content that goes beyond the container */
+}
+
+.image-container img {
+  width: 75rem; /* Adjust the width as needed */
+  height: fixed; /* This maintains the aspect ratio */
+}
+
+.parallax-container {
+  height: 500px; /* Set the desired container height */
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-image {
+  background-image: url("images/4ABE160BE8DA4BC38CA9077EFDED0FDD.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150%; /* Increase the height to reveal more of the image */
+  position: absolute;
+  top: 0%; /* Adjust this value to control the initial position */
+  animation: parallaxScroll 10s linear infinite; /* Adjust the animation duration */
+}
+
+@keyframes parallaxScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+/* Contact form */
+
+.contact-form h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the whole form container */
+.contact-form__container {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form headings */
+.contact-form__container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for labels */
+.contact-form__container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+.contact-form__container input,
+.contact-form__container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the submit button */
+.contact-form__container button[type="submit"] {
+  background-color: #ff83b7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form__container button[type="submit"]:hover {
+  background-color: #ff428d;
+}
